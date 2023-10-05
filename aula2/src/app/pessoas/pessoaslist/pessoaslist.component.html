@@ -1,0 +1,15 @@
+<table>
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Idade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let person of pessoas">
+        <td *ngIf="person.idade > 30">{{ person.nome }}</td>
+        <td *ngIf="person.idade > 30">{{ person.idade }}</td>
+      </tr>
+    </tbody>
+  </table>
+  
